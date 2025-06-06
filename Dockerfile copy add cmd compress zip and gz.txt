@@ -31,9 +31,9 @@ copy and add and compress file and gz          06-06-2025
    37  dir2
    38  cd dir2
    39  ls
-   40  tar -cvf myfile.tar f1 f2 f3
+   40  tar -cvf myfile.tar f1 f2 f3 (for compress the files)
    41  ls
-   42  gzip myfile.tar 
+   42  gzip myfile.tar (for more compress)
    43  ls
    44  ls -lh
    45  vi Dockerfile
@@ -57,9 +57,9 @@ Dockerfile
 
 FROM ubuntu
 WORKDIR /home/ubuntu
-COPY myfile.tar.gz .
+COPY myfile.tar.gz .  (copy in that local to df copy in the workdir path)
+RUN tar -xvf myfile.tar.gz (extract that file)
 WORKDIR /home/ubuntu
-RUN tar -xvf myfile.tar.gz
-ADD myfile.tar.gz .
+ADD myfile.tar.gz . (compress+extractc at a time)
 CMD ["/bin/bash"]
 ----
