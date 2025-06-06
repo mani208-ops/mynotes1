@@ -1,4 +1,4 @@
-Dockerfile javawebaclculator
+Dockerfile javawebaclculator        05-06-2025
 ------------------------
 FROM ubuntu:20.04 AS build
 ENV DEBIAN_FRONTEND=noninteractive
@@ -15,15 +15,6 @@ COPY --from=build JavaWebCalculator/target/*.war /usr/local/tomcat/webapps
 RUN chmod -R 755 /usr/local/tomcat/webapps
 EXPOSE 8080
 CMD ["catalina.sh","run"]
-
-
-
-
-
-
-
-
-
 
 
 copy and add and compress file and gz          06-06-2025
