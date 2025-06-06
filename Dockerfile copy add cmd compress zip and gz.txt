@@ -1,0 +1,65 @@
+copy and add and compress file and gz          06-06-2025
+:----------------------------
+
+
+   11  Installations/
+   12  ls
+   13  Installations/
+   14  ls
+   15  cd Installations/
+   16  ls
+   17  mkdir dir2
+   18  cd dir2
+   19  f2
+   20  touch f2
+   21  cat f2
+   22  vi f2
+   23  vi f1
+   24  touch f3
+   25  ls
+   26  cp f2 f3
+   27  ls
+   28  vi f3
+   29  cd
+   30  cd dir1
+   31  cd Installations/
+   32  ls
+   33  cd dir1
+   34  ls
+   35  cd .
+   36  cd ..
+   37  dir2
+   38  cd dir2
+   39  ls
+   40  tar -cvf myfile.tar f1 f2 f3
+   41  ls
+   42  gzip myfile.tar 
+   43  ls
+   44  ls -lh
+   45  vi Dockerfile
+   46  docker build -t img:v1 '
+docker build -t img:v1 '
+   47  docker build -t img:v1 .
+   48  docker images
+   49  docker run -it --name con -d img:v1
+   50  docker ps
+   51  docker exec it con /bin/bash
+   52  docker exec -it con /bin/bash
+   53  vi Dockerfile 
+   54  history
+   55  vi Dockerfile 
+   56  cat Dockerfile 
+   57  history
+
+
+Dockerfile
+\-------
+
+FROM ubuntu
+WORKDIR /home/ubuntu
+COPY myfile.tar.gz .
+WORKDIR /home/ubuntu
+RUN tar -xvf myfile.tar.gz
+ADD myfile.tar.gz .
+CMD ["/bin/bash"]
+
