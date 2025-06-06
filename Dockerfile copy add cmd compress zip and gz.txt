@@ -62,4 +62,4 @@ WORKDIR /home/ubuntu
 RUN tar -xvf myfile.tar.gz
 ADD myfile.tar.gz .
 CMD ["/bin/bash"]
-
+----
