@@ -37,9 +37,7 @@ copy and add and compress file and gz          06-06-2025
    43  ls
    44  ls -lh
    45  vi Dockerfile
-   46  docker build -t img:v1 '
-docker build -t img:v1 '
-   47  docker build -t img:v1 .
+   47  docker build -t img:v1 .  (. dot meand it will place take that path)
    48  docker images
    49  docker run -it --name con -d img:v1
    50  docker ps
