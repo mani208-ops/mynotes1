@@ -1,4 +1,7 @@
+before create 1 repositor inside that put vprofile && javawebcalculator (both in same repository) + creat 1 yaml file in git hub  (hasa repo)
 
+then follow these steps:
+mvn package 
 apt update -y
     2  git clone https://github.com/mani208-ops/Installations.git
     3  ls
