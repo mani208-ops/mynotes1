@@ -1,1 +1,28 @@
 
+apt update -y
+    2  git clone https://github.com/mani208-ops/Installations.git
+    3  ls
+    4  cd Installations/
+    5  ls
+    6  sh docker.sh 
+    7  ls
+    8  docker-compose --version
+    9  git clone https://github.com/mani208-ops/JavaWebCalculator.git
+   10  cd
+   11  apt install maven -y
+   12  apt install openjdk-17-jdk -y
+   13  git clone https://github.com/mani208-ops/CombinedProject.git
+   14  ls
+   15  cd CombinedProject/
+   16  ls
+   17  cd JavaWebCalculator/
+   18  mvn package
+   19  cd ..
+   20  cd vprofile-project/
+   21  mvn package
+   22  cd ..
+   23  docker-compose build
+   24  docker images
+   25  docker-compose up -d
+   26  ls
+   27  docker ps
