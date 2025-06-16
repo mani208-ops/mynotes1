@@ -1,4 +1,4 @@
-before create 1 repositor inside that put vprofile && javawebcalculator (both in same repository) + creat 1 yaml file in git hub  (hs repo)
+before create 1 repositor inside that put vprofile && javawebcalculator (both in same repository) + creat 1 yaml file in git hub  (manoj repo)
 
 then follow these steps:
 mvn package 
